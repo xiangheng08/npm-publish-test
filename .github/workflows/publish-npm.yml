@@ -31,6 +31,6 @@ jobs:
         run: pnpm build
 
       - name: Publish to npmjs
-        run: npm publish --provenance --access private
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
